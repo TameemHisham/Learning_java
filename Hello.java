@@ -14,6 +14,10 @@ class Hello {
         short val3 = 3232; // 2 bytes
         char c1 = 'a'; // 2 bytes
         boolean isOver18 = true;
-
+// type casting
+        int num3 = 5;
+        double num4 = 6.4;
+        double sum = num4 + (double) num3 ;
+        System.out.println(sum);
     }
 }
