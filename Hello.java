@@ -19,5 +19,9 @@ class Hello {
         double num4 = 6.4;
         double sum = num4 + (double) num3 ;
         System.out.println(sum);
+//        Operations
+        int counter = 0;
+        counter++; // post-increment <- fetch then increment
+        ++counter; //pre-increment <- increment and fetch
     }
 }
