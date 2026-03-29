@@ -1,17 +1,19 @@
-import java.util.Arrays;
+import java.util.Scanner;
 
 class Hello {
     public static void main(String[] args) {
-        int[] arr1 = {1, 2, 3};
-        int[] arr2 = {1, 2, 3};
-        int[] nums = new int[5];
-        // array methods
-        System.out.println(Arrays.compare(arr1, arr2)); // compare 2 arrays
-        System.out.println(Arrays.equals(arr1, arr2)); // check if the 2 arrays are equal
-        Arrays.fill(nums, 5);
-        for (int num : nums) {
-            System.out.print(num + " ");
+        Scanner myObj = new Scanner(System.in);
+        int randomNumber = (int) (Math.random() * 10);
+        int guess = -1;
+        while (guess != randomNumber) {
+            System.out.println("Enter your guess!");
+            guess = myObj.nextInt();
+            if (guess > randomNumber) {
+                System.out.println("Smaller!");
+            } else if (guess < randomNumber) {
+                System.out.println("Bigger!");
+            }
         }
-        System.out.println();
+        System.out.println("YAY! the number was indeed: " + randomNumber);
     }
 }
