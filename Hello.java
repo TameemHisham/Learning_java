@@ -4,6 +4,11 @@ class Human {
     private int age;
     private String name;
 
+    public Human(int age, String name) {
+        this.age = age;
+        this.name = name;
+    }
+
     public int getAge() {
         return age;
     }
@@ -23,14 +28,14 @@ class Human {
 
 class Hello {
     public static void main(String[] args) {
-        Human me = new Human();
+        Human me = new Human(18, "TAMEEM");
 //        me.name = "tameem"
         System.out.println(me.getAge());
         System.out.println(me.getName());
-        me.setAge(18);
-        me.setName("Tameem");
-        System.out.println(me.getAge());
-        System.out.println(me.getName());
+//        me.setAge(18);
+//        me.setName("Tameem");
+//        System.out.println(me.getAge());
+//        System.out.println(me.getName());
     }
 
 }
