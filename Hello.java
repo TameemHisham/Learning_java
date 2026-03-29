@@ -1,15 +1,17 @@
-class Calculator {
-    public int add(int num1, int num2) {
-        System.out.println("Add!");
-        return num1 + num2;
-    }
-}
-
+import java.util.Arrays;
 
 class Hello {
     public static void main(String[] args) {
-        Calculator mycalc = new Calculator();
-        int result = mycalc.add(4, 5);
-        System.out.println(result);
+        int[] arr1 = {1, 2, 3};
+        int[] arr2 = {1, 2, 3};
+        int[] nums = new int[5];
+        // array methods
+        System.out.println(Arrays.compare(arr1, arr2)); // compare 2 arrays
+        System.out.println(Arrays.equals(arr1, arr2)); // check if the 2 arrays are equal
+        Arrays.fill(nums, 5);
+        for (int num : nums) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
     }
 }
