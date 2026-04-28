@@ -31,5 +31,9 @@ class Main {
     public static void main(String[] args) {
         Human tameem = new Human(12, "tameem");
         System.out.println(Human.school);
+
+    }
+    static { // runs on class creation
+        System.out.println("Hello?");
     }
 }
