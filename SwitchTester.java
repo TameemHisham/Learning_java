@@ -1,27 +1,19 @@
-
+import java.util.Scanner;
 
 
 class SwitchTester {
  public static void main(String args[]) {
-	System.out.println("A  |  B  |  switchExperiment");
-	for (int a = 1; a < 6; a++) {
-		switchExperiment(a, a*a);
+	Scanner myScanner = new Scanner(System.in);
+	String month = myScanner.next();
+	switch (month) {
+		case "Jan" -> System.out.println("Winter, new year new me!");
+		case "Feb" , "Dec" , "Nov" , "Oct" -> System.out.println("Winter");
+		case "Mar" , "Apr" , "May" -> System.out.println("Spring");
+		case "Jun" , "Jul"  -> System.out.println("Summer");
+		case "Aug"  -> System.out.println("Fall, Summer vacation is over!");
+		case "Sep"  -> System.out.println("Fall");
+		default -> System.out.println("mate this ain't a month");	
 	}
-
-   //System.out.println(String.format("A: %s", ((Object)a).getClass().getName()));
-   //System.out.println(String.format("B: %s", ((Object)b).getClass().getName()));
-   
+ } 
  }
- public static void switchExperiment(int a, int b) {
-   int val_update = b;
-   //System.out.println(val_update);
-   switch (a) {
-     case 1 ->val_update -= 4;
-     case 2 ->val_update += 4;
-     case 3 ->val_update /= 4;
-     case 4 -> val_update *= 4;
-     default -> val_update = 0;
-   }
-	System.out.println(String.format("%d  |  %d  |  %d", a,b,val_update));
- }
-}
+ 
