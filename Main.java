@@ -1,20 +1,10 @@
-import java.util.Arrays;
 
-class SimpleCalculator {
-    public int add(int a, int b) {
-        return a+b;
-    }
-    public int sub(int a, int b) {
-        return a-b;
-    }
-    public int mul(int a, int b) {
-        return a*b;
-    }
-    public float div(int a, int b) {
-        return (float) a /b;
-    }
-}
 class Main {
     public static void main(String[] args) {
+        AdvancedCalculator calc = new AdvancedCalculator();
+        System.out.println(calc.pow(2,4));
+        System.out.println(calc.add(5,6));
+        System.out.println(calc.mul(2,6));
+        System.out.println(calc.log(10));
     }
 }
