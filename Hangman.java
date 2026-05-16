@@ -38,7 +38,7 @@ class Hangman {
 		boolean found = true;
 		for (int i = 0 ; i < this.MAX_GUESSES ; i++ ) {
 			if (this.guesses[i] == guess) {
-				System.out.println(guess + "has been guessed before");
+				System.out.println(guess + " has been guessed before");
 				found = false;
 				break;
 			} 
